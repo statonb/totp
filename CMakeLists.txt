@@ -12,6 +12,7 @@ find_package(OpenSSL REQUIRED)
 add_executable(totp_openssl
     totp_openssl.c
     base32.c
+    base64.c
 )
 
 target_link_libraries(totp_openssl
@@ -26,6 +27,7 @@ add_executable(totp_standalone
     totp_standalone.c
     sha1.c
     base32.c
+    base64.c
 )
 
 target_include_directories(totp_standalone PUBLIC
